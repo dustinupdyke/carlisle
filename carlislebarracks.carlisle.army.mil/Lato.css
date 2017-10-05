@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(Lato-Light.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Light.eot*/;
+  src: local('Lato Light'), local('Lato-Light'), url(Lato-Light.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Light.eot*/ format('embedded-opentype'), url(Lato-Light.woff)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Light.woff*/ format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Lato-Regular.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Regular.eot*/;
+  src: local('Lato Regular'), local('Lato-Regular'), url(Lato-Regular.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Regular.eot*/ format('embedded-opentype'), url(Lato-Regular.woff)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Regular.woff*/ format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Lato-Bold.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Bold.eot*/;
+  src: local('Lato Bold'), local('Lato-Bold'), url(Lato-Bold.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Bold.eot*/ format('embedded-opentype'), url(Lato-Bold.woff)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Bold.woff*/ format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: url(Lato-LightItalic.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-LightItalic.eot*/;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(Lato-LightItalic.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-LightItalic.eot*/ format('embedded-opentype'), url(Lato-LightItalic.woff)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-LightItalic.woff*/ format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url(Lato-Italic.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Italic.eot*/;
+  src: local('Lato Italic'), local('Lato-Italic'), url(Lato-Italic.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Italic.eot*/ format('embedded-opentype'), url(Lato-Italic.woff)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Lato-Italic.woff*/ format('woff');
+}

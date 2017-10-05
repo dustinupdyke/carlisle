@@ -1,0 +1,85 @@
+	@charset "utf-8";
+.roll{
+font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 4px;
+	padding-right: 2px;
+	padding-bottom: 3px;
+	padding-left: 2px;
+	background-color: #F8F8F8;
+	color: #F8F8F8;
+}
+
+.roll:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: underline;
+	padding-top: 4px;
+	padding-right: 2px;
+	padding-bottom: 3px;
+	padding-left: 2px;
+	color: #003399;	
+}
+.formLabel {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+	}
+.formField {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+.tableCaption {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+	}
+.exampleText {
+		color: #009900;
+		font-weight:bold;
+	}
+.button {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #0000FF;
+	}
+.redSplat {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color: #CC0000;
+	}
+.greenSmallText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #009900;
+	font-weight: bold;
+	}
+.redSmallText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #CC0000;
+	font-weight: bold;
+}
+.Arial9 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+.Arial12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.Arial12Bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+}
+.Arial12BoldGreen {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color:#009900;
+}

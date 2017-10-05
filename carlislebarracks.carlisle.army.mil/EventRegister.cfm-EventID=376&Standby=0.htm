@@ -1,0 +1,1980 @@
+
+
+<html>
+<head>
+
+
+<script language="javascript">
+
+	function RankClass(c, d)
+	{
+		this.code = c;
+		this.description = d;
+	}
+	 
+	var objComponent = new Object;
+	objComponent.ANG = new Object;
+	objComponent.ARNG = new Object;
+	objComponent.Contractor = new Object;
+	objComponent.DACivilian = new Object;
+	objComponent.USA = new Object;
+	objComponent.USAF = new Object;
+	objComponent.USAFR = new Object;
+	objComponent.USAR = new Object;
+	objComponent.USCG = new Object;
+	objComponent.USMC = new Object;
+	objComponent.USMCR = new Object;
+	objComponent.USN = new Object;
+	objComponent.USNR = new Object;
+	objComponent.UK = new Object;
+	objComponent.Other = new Object;
+	objComponent.IF = new Object;
+
+	var iANG = 1;
+	var iARNG = 1;
+	var iContractor = 1;
+	var iDACivilian = 1;
+	var iUSA = 1;
+	var iUSAF = 1;
+	var iUSAFR = 1;
+	var iUSAR = 1;
+	var iUSCG = 1;
+	var iUSMC = 1;
+	var iUSMCR = 1;
+	var iUSN = 1;
+	var iUSNR = 1;
+	var iUK = 1;
+	var iOther = 1;
+	var iIF = 1;
+	
+	var arrServices = new Array();
+	
+	objComponent.ANG.arrRank = new Array();
+	objComponent.ARNG.arrRank = new Array();
+	objComponent.Contractor.arrRank = new Array();
+	objComponent.DACivilian.arrRank = new Array();
+	objComponent.USA.arrRank = new Array();
+	objComponent.USAF.arrRank = new Array();
+	objComponent.USAFR.arrRank = new Array();
+	objComponent.USAR.arrRank = new Array();
+	objComponent.USCG.arrRank = new Array();
+	objComponent.USMC.arrRank = new Array();
+	objComponent.USMCR.arrRank = new Array();
+	objComponent.USN.arrRank = new Array();
+	objComponent.USNR.arrRank = new Array();
+	objComponent.UK.arrRank = new Array();
+	objComponent.Other.arrRank = new Array();
+	objComponent.IF.arrRank = new Array();
+
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(1, 'Gen' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(2, 'Gen (Sel)' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(3, 'Lt Gen' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(4, 'Lt Gen (Sel)' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(5, 'Maj Gen' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(6, 'Maj Gen (Sel)' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(7, 'Brigj Gen' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(8, 'Brig Gen (Sel)' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(9, 'Col' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(10, 'Col (Sel)' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(11, 'Lt Col' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(12, 'Maj' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(13, 'Capt' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(14, '1st Lt' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(15, '2nd Lt' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(16, 'CMSgt' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(17, 'SMSgt' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(18, 'MSgt' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(19, 'TSgt' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(20, 'SSgt' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(21, 'SRA' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(22, 'A1C' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(23, 'Amn' );
+	
+		objComponent['ANG'].arrRank[iANG++] = new RankClass(24, 'AB' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(25, 'GEN' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(26, 'GEN (Sel)' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(27, 'LTG' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(28, 'LTG (Sel)' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(29, 'MG' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(30, 'MG (Sel)' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(31, 'BG' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(32, 'BG (Sel)' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(33, 'COL' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(34, 'COL (Sel)' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(35, 'LTC' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(36, 'MAJ' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(37, 'CPT' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(38, '1LT' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(39, '2LT' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(40, 'CSM' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(41, 'SGM' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(42, '1SG' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(43, 'MSG' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(44, 'SFC' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(45, 'SSG' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(46, 'SGT' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(47, 'CPL' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(48, 'SPC' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(49, 'PFC' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(50, 'PVT' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(51, 'PVT' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(52, 'CW5' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(53, 'CW4' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(54, 'CW3' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(55, 'CW2' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(56, 'W01' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(424, 'CADET' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(743, 'CH (COL)' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(744, 'CH (LTC)' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(745, 'CH (MAJ)' );
+	
+		objComponent['ARNG'].arrRank[iARNG++] = new RankClass(764, 'SA' );
+	
+		objComponent['Contractor'].arrRank[iContractor++] = new RankClass(57, 'Miss' );
+	
+		objComponent['Contractor'].arrRank[iContractor++] = new RankClass(58, 'Mr' );
+	
+		objComponent['Contractor'].arrRank[iContractor++] = new RankClass(59, 'Mrs' );
+	
+		objComponent['Contractor'].arrRank[iContractor++] = new RankClass(60, 'Ms' );
+	
+		objComponent['Contractor'].arrRank[iContractor++] = new RankClass(418, 'Dr' );
+	
+		objComponent['DACivilian'].arrRank[iDACivilian++] = new RankClass(61, 'Amb' );
+	
+		objComponent['DACivilian'].arrRank[iDACivilian++] = new RankClass(62, 'Dr' );
+	
+		objComponent['DACivilian'].arrRank[iDACivilian++] = new RankClass(63, 'Mr' );
+	
+		objComponent['DACivilian'].arrRank[iDACivilian++] = new RankClass(64, 'Mrs' );
+	
+		objComponent['DACivilian'].arrRank[iDACivilian++] = new RankClass(65, 'Miss' );
+	
+		objComponent['DACivilian'].arrRank[iDACivilian++] = new RankClass(66, 'Ms' );
+	
+		objComponent['DACivilian'].arrRank[iDACivilian++] = new RankClass(67, 'Prof' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(117, 'GENA' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(118, 'GEN' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(119, 'GEN (Sel)' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(120, 'LTG' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(121, 'LTG (Sel)' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(122, 'MG' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(123, 'MG (Sel)' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(124, 'BG' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(125, 'BG (Sel)' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(126, 'COL' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(127, 'COL (Sel)' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(128, 'LTC' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(129, 'MAJ' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(130, 'CPT' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(131, '1LT' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(132, '2LT' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(133, 'CMA' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(134, 'CSM' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(135, 'SGM' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(136, '1SG' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(137, 'MSG' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(138, 'SFC' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(139, 'SSG' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(140, 'SGT' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(141, 'CPL' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(142, 'SPC' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(143, 'PFC' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(144, 'PV2' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(145, 'PVT' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(146, 'CW5' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(147, 'CW4' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(148, 'CW3' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(149, 'CW2' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(150, 'W01' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(425, 'CADET' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(746, 'CH (COL)' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(747, 'CH (LTC)' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(748, 'CH (MAJ)' );
+	
+		objComponent['USA'].arrRank[iUSA++] = new RankClass(765, 'SA' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(151, 'GenAF' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(152, 'Gen' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(153, 'Gen (Sel)' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(154, 'Lt Gen' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(155, 'Lt Gen (Sel)' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(156, 'Maj Gen' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(157, 'Maj Gen (Sel)' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(158, 'Brigj Gen' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(159, 'Brig Gen (Sel)' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(160, 'Col' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(161, 'Col (Sel)' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(162, 'Lt Col' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(163, 'Maj' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(164, 'Capt' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(165, '1st Lt' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(166, '2nd Lt' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(167, 'CMSAF' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(168, 'CMSgt' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(169, 'SMSgt' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(170, 'MSgt' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(171, 'TSgt' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(172, 'SSgt' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(173, 'SRA' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(174, 'A1C' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(175, 'Amn' );
+	
+		objComponent['USAF'].arrRank[iUSAF++] = new RankClass(176, 'AB' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(177, 'FADM' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(178, 'Adm' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(179, 'Adm (Sel)' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(180, 'VAdm' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(181, 'VAdm (Sel)' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(182, 'RAdm' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(183, 'RAdm (Sel)' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(184, 'Comm' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(185, 'Comm (Sel)' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(186, 'Capt' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(187, 'Capt (Sel)' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(189, 'Cdr' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(191, 'LtC' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(192, 'Lt' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(194, 'LtJG' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(195, 'Ens' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(196, 'W4' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(197, 'W3' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(198, 'W2' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(199, 'W1' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(200, 'MCPOCG' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(201, 'MCPOC' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(202, 'MCPO' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(203, 'SCPO' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(204, 'CPO' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(205, 'PO1' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(206, 'PO2' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(207, 'PO3' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(208, 'FN' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(209, 'SN' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(210, 'FA' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(211, 'SA' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(212, 'SR' );
+	
+		objComponent['USCG'].arrRank[iUSCG++] = new RankClass(763, 'CH (Cdr)' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(213, 'GEN' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(214, 'GEN (Sel)' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(215, 'LTG' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(216, 'LTG (Sel)' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(217, 'MG' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(218, 'MG (Sel)' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(219, 'BG' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(220, 'BG (Sel)' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(221, 'COL' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(222, 'COL (Sel)' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(223, 'LTC' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(224, 'MAJ' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(225, 'CPT' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(226, '1LT' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(227, '2LT' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(228, 'CSM' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(229, 'SGM' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(230, '1SG' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(231, 'MSG' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(232, 'SFC' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(233, 'SSG' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(234, 'SGT' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(235, 'CPL' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(236, 'SPC' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(237, 'PFC' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(238, 'PVT' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(239, 'PVT' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(240, 'CW5' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(241, 'CW4' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(242, 'CW3' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(243, 'CW2' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(244, 'W01' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(426, 'CADET' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(749, 'CH (COL)' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(750, 'CH (LTC)' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(751, 'CH (MAJ)' );
+	
+		objComponent['USAR'].arrRank[iUSAR++] = new RankClass(766, 'SA' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(245, 'Gen' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(246, 'Gen (Sel)' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(247, 'Lt Gen' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(248, 'Lt Gen (Sel)' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(249, 'Maj Gen' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(250, 'Maj Gen (Sel)' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(251, 'Brigj Gen' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(252, 'Brig Gen (Sel)' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(253, 'Col' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(254, 'Col (Sel)' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(255, 'Lt Col' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(256, 'Maj' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(257, 'Capt' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(258, '1st Lt' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(259, '2nd Lt' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(260, 'CMSgt' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(261, 'SMSgt' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(262, 'MSgt' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(263, 'TSgt' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(264, 'SSgt' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(265, 'SRA' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(266, 'A1C' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(267, 'Amn' );
+	
+		objComponent['USAFR'].arrRank[iUSAFR++] = new RankClass(268, 'AB' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(269, 'CMC' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(270, 'Gen' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(271, 'Gen (Sel)' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(272, 'Lt Gen' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(273, 'Lt Gen (Sel)' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(274, 'Maj Gen' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(275, 'Maj Gen (Sel)' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(276, 'Brig Gen' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(277, 'Brig Gen (Sel)' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(278, 'Col' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(279, 'Col (Sel)' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(280, 'Lt Col' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(281, 'Maj' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(282, 'Capt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(283, '1st Lt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(284, '2nd Lt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(285, 'SgtMajMC' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(286, 'SgtMaj' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(287, 'MGySgt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(288, 'FSgt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(289, 'MSgt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(290, 'GySgt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(291, 'SSgt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(292, 'Sgt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(293, 'Cpl' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(294, 'LCpl' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(295, 'PFC' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(296, 'Pvt' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(297, 'CWO5' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(298, 'CWO4' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(299, 'CWO3' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(300, 'CWO2' );
+	
+		objComponent['USMC'].arrRank[iUSMC++] = new RankClass(301, 'WO1' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(303, 'Gen' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(304, 'Gen (Sel)' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(305, 'Lt Gen' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(306, 'Lt Gen (Sel)' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(307, 'Maj Gen' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(308, 'Maj Gen (Sel)' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(309, 'Brig Gen' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(310, 'Brig Gen (Sel)' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(311, 'Col' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(312, 'Col (Sel)' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(313, 'Lt Col' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(314, 'Maj' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(315, 'Capt' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(316, '1st Lt' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(317, '2nd Lt' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(318, 'CWO5' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(319, 'CWO4' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(320, 'CWO3' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(321, 'CWO2' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(322, 'WO1' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(323, 'SgtMaj' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(324, 'MGySgt' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(325, 'FSgt' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(326, 'MSgt' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(327, 'GySgt' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(328, 'SSgt' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(329, 'Sgt' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(330, 'Cpl' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(331, 'LCpl' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(332, 'PFC' );
+	
+		objComponent['USMCR'].arrRank[iUSMCR++] = new RankClass(333, 'Pvt' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(334, 'FAdm' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(335, 'FAdm (Sel)' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(336, 'Adm' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(337, 'Adm (Sel)' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(338, 'VAdm' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(339, 'VAdm (Sel)' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(341, 'RAdm' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(342, 'RAdm (Sel)' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(343, 'RDml' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(344, 'RDml (Sel)' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(345, 'Capt' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(346, 'Capt (Sel)' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(347, 'Cdr' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(348, 'LCdr' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(349, 'Lt' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(350, 'LtJG' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(351, 'Ens' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(352, 'MWO' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(353, 'CW4' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(354, 'CW3' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(355, 'CW2' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(356, 'WO1' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(357, 'MCPON' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(358, 'MCPO' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(359, 'SCPO' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(360, 'CPO' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(361, 'PO1' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(362, 'PO2' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(363, 'PO3' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(364, 'SN' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(365, 'SA' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(366, 'SR' );
+	
+		objComponent['USN'].arrRank[iUSN++] = new RankClass(761, 'CH (Cdr)' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(367, 'Adm' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(368, 'Adm (Sel)' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(369, 'VAdm' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(370, 'VAdm (Sel)' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(371, 'RAdm' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(372, 'RAdm (Sel)' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(373, 'RDml' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(374, 'RDml (Sel)' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(375, 'Capt' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(376, 'Capt (Sel)' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(377, 'Cdr' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(378, 'LCdr' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(379, 'Lt' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(380, 'LtJG' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(381, 'Ens' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(382, 'MWO' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(383, 'CW4' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(384, 'CW3' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(385, 'CW2' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(386, 'WO1' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(387, 'MCPO' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(388, 'SCPO' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(389, 'CPO' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(390, 'PO1' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(391, 'PO2' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(392, 'PO3' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(393, 'SN' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(394, 'SA' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(395, 'SR' );
+	
+		objComponent['USNR'].arrRank[iUSNR++] = new RankClass(762, 'CH (Cdr)' );
+	
+		objComponent['UK'].arrRank[iUK++] = new RankClass(396, 'Gen' );
+	
+		objComponent['UK'].arrRank[iUK++] = new RankClass(397, 'Lt Gen' );
+	
+		objComponent['UK'].arrRank[iUK++] = new RankClass(398, 'Maj Gen' );
+	
+		objComponent['UK'].arrRank[iUK++] = new RankClass(399, 'Brig' );
+	
+		objComponent['UK'].arrRank[iUK++] = new RankClass(400, 'Col' );
+	
+		objComponent['UK'].arrRank[iUK++] = new RankClass(401, 'Lt Col' );
+	
+		objComponent['UK'].arrRank[iUK++] = new RankClass(402, 'Maj' );
+	
+		objComponent['Other'].arrRank[iOther++] = new RankClass(403, 'Dr' );
+	
+		objComponent['Other'].arrRank[iOther++] = new RankClass(404, 'Prof' );
+	
+		objComponent['Other'].arrRank[iOther++] = new RankClass(405, 'Amb' );
+	
+		objComponent['Other'].arrRank[iOther++] = new RankClass(406, 'Ms' );
+	
+		objComponent['Other'].arrRank[iOther++] = new RankClass(407, 'Miss' );
+	
+		objComponent['Other'].arrRank[iOther++] = new RankClass(408, 'Mrs' );
+	
+		objComponent['Other'].arrRank[iOther++] = new RankClass(409, 'Mr' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(411, 'MAJOR GENRAL' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(412, 'BRIGADIER GENERAL' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(413, 'COLONEL' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(414, 'LIEUTENANT COLONEL' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(415, 'MAJOR' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(416, 'MISTER' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(417, 'MS' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(422, 'LIEUTENANT GENERAL' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(423, 'GENERAL' );
+	
+		objComponent['IF'].arrRank[iIF++] = new RankClass(769, 'CAPTAIN' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(427, 'FADM' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(428, 'Adm' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(429, 'Adm (Sel)' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(430, 'VAdm' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(431, 'VAdm (Sel)' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(432, 'RAdm' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(433, 'RAdm (Sel)' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(434, 'Comm' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(435, 'Comm (Sel)' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(436, 'Capt' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(437, 'Capt (Sel)' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(438, 'Cdr' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(439, 'LtC' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(440, 'Lt' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(441, 'LtJG' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(442, 'Ens' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(443, 'W4' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(444, 'W3' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(445, 'W2' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(446, 'W1' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(447, 'MCPOCG' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(448, 'MCPOC' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(449, 'MCPO' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(450, 'SCPO' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(451, 'CPO' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(452, 'PO1' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(453, 'PO2' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(454, 'PO3' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(455, 'FN' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(456, 'SN' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(457, 'FA' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(458, 'SA' );
+	
+		objComponent['USCGR'].arrRank[iUSCGR++] = new RankClass(459, 'SR' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(460, 'GEN' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(461, 'GEN (Sel)' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(462, 'LTG' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(463, 'LTG (Sel)' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(464, 'MG' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(465, 'MG (Sel)' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(466, 'BG' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(467, 'BG (Sel)' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(468, 'COL' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(469, 'COL (Sel)' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(470, 'LTC' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(471, 'MAJ' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(472, 'CPT' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(473, '1LT' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(474, '2LT' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(475, 'CSM' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(476, 'SGM' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(477, '1SG' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(478, 'MSG' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(479, 'SFC' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(480, 'SSG' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(481, 'SGT' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(482, 'CPL' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(483, 'SPC' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(484, 'PFC' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(485, 'PVT' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(486, 'PVT' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(487, 'CW5' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(488, 'CW4' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(489, 'CW3' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(490, 'CW2' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(491, 'W01' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(492, 'CADET' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(752, 'CH (COL)' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(753, 'CH (LTC)' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(754, 'CH (MAJ)' );
+	
+		objComponent['USARA'].arrRank[iUSARA++] = new RankClass(767, 'SA' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(493, 'GEN' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(494, 'GEN (Sel)' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(495, 'LTG' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(496, 'LTG (Sel)' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(497, 'MG' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(498, 'MG (Sel)' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(499, 'BG' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(500, 'BG (Sel)' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(501, 'COL' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(502, 'COL (Sel)' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(503, 'LTC' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(504, 'MAJ' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(505, 'CPT' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(506, '1LT' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(507, '2LT' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(508, 'CSM' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(509, 'SGM' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(510, '1SG' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(511, 'MSG' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(512, 'SFC' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(513, 'SSG' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(514, 'SGT' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(515, 'CPL' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(516, 'SPC' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(517, 'PFC' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(518, 'PVT' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(519, 'PVT' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(520, 'CW5' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(521, 'CW4' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(522, 'CW3' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(523, 'CW2' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(524, 'W01' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(525, 'CADET' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(755, 'CH (COL)' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(756, 'CH (LTC)' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(757, 'CH (MAJ)' );
+	
+		objComponent['USART'].arrRank[iUSART++] = new RankClass(768, 'SA' );
+	
+		objComponent['CIA'].arrRank[iCIA++] = new RankClass(526, 'Amb' );
+	
+		objComponent['CIA'].arrRank[iCIA++] = new RankClass(527, 'Dr' );
+	
+		objComponent['CIA'].arrRank[iCIA++] = new RankClass(528, 'Mr' );
+	
+		objComponent['CIA'].arrRank[iCIA++] = new RankClass(529, 'Mrs' );
+	
+		objComponent['CIA'].arrRank[iCIA++] = new RankClass(530, 'Miss' );
+	
+		objComponent['CIA'].arrRank[iCIA++] = new RankClass(531, 'Ms' );
+	
+		objComponent['CIA'].arrRank[iCIA++] = new RankClass(532, 'Prof' );
+	
+		objComponent['CID'].arrRank[iCID++] = new RankClass(533, 'Amb' );
+	
+		objComponent['CID'].arrRank[iCID++] = new RankClass(534, 'Dr' );
+	
+		objComponent['CID'].arrRank[iCID++] = new RankClass(535, 'Mr' );
+	
+		objComponent['CID'].arrRank[iCID++] = new RankClass(536, 'Mrs' );
+	
+		objComponent['CID'].arrRank[iCID++] = new RankClass(537, 'Miss' );
+	
+		objComponent['CID'].arrRank[iCID++] = new RankClass(538, 'Ms' );
+	
+		objComponent['CID'].arrRank[iCID++] = new RankClass(539, 'Prof' );
+	
+		objComponent['CIV'].arrRank[iCIV++] = new RankClass(540, 'Amb' );
+	
+		objComponent['CIV'].arrRank[iCIV++] = new RankClass(541, 'Dr' );
+	
+		objComponent['CIV'].arrRank[iCIV++] = new RankClass(542, 'Mr' );
+	
+		objComponent['CIV'].arrRank[iCIV++] = new RankClass(543, 'Mrs' );
+	
+		objComponent['CIV'].arrRank[iCIV++] = new RankClass(544, 'Miss' );
+	
+		objComponent['CIV'].arrRank[iCIV++] = new RankClass(545, 'Ms' );
+	
+		objComponent['CIV'].arrRank[iCIV++] = new RankClass(546, 'Prof' );
+	
+		objComponent['CPMS'].arrRank[iCPMS++] = new RankClass(547, 'Amb' );
+	
+		objComponent['CPMS'].arrRank[iCPMS++] = new RankClass(548, 'Dr' );
+	
+		objComponent['CPMS'].arrRank[iCPMS++] = new RankClass(549, 'Mr' );
+	
+		objComponent['CPMS'].arrRank[iCPMS++] = new RankClass(550, 'Mrs' );
+	
+		objComponent['CPMS'].arrRank[iCPMS++] = new RankClass(551, 'Miss' );
+	
+		objComponent['CPMS'].arrRank[iCPMS++] = new RankClass(552, 'Ms' );
+	
+		objComponent['CPMS'].arrRank[iCPMS++] = new RankClass(553, 'Prof' );
+	
+		objComponent['DECA'].arrRank[iDECA++] = new RankClass(554, 'Amb' );
+	
+		objComponent['DECA'].arrRank[iDECA++] = new RankClass(555, 'Dr' );
+	
+		objComponent['DECA'].arrRank[iDECA++] = new RankClass(556, 'Mr' );
+	
+		objComponent['DECA'].arrRank[iDECA++] = new RankClass(557, 'Mrs' );
+	
+		objComponent['DECA'].arrRank[iDECA++] = new RankClass(558, 'Miss' );
+	
+		objComponent['DECA'].arrRank[iDECA++] = new RankClass(559, 'Ms' );
+	
+		objComponent['DECA'].arrRank[iDECA++] = new RankClass(560, 'Prof' );
+	
+		objComponent['DHS'].arrRank[iDHS++] = new RankClass(561, 'Amb' );
+	
+		objComponent['DHS'].arrRank[iDHS++] = new RankClass(562, 'Dr' );
+	
+		objComponent['DHS'].arrRank[iDHS++] = new RankClass(563, 'Mr' );
+	
+		objComponent['DHS'].arrRank[iDHS++] = new RankClass(564, 'Mrs' );
+	
+		objComponent['DHS'].arrRank[iDHS++] = new RankClass(565, 'Miss' );
+	
+		objComponent['DHS'].arrRank[iDHS++] = new RankClass(566, 'Ms' );
+	
+		objComponent['DHS'].arrRank[iDHS++] = new RankClass(567, 'Prof' );
+	
+		objComponent['DIA'].arrRank[iDIA++] = new RankClass(568, 'Amb' );
+	
+		objComponent['DIA'].arrRank[iDIA++] = new RankClass(569, 'Dr' );
+	
+		objComponent['DIA'].arrRank[iDIA++] = new RankClass(570, 'Mr' );
+	
+		objComponent['DIA'].arrRank[iDIA++] = new RankClass(571, 'Mrs' );
+	
+		objComponent['DIA'].arrRank[iDIA++] = new RankClass(572, 'Miss' );
+	
+		objComponent['DIA'].arrRank[iDIA++] = new RankClass(573, 'Ms' );
+	
+		objComponent['DIA'].arrRank[iDIA++] = new RankClass(574, 'Prof' );
+	
+		objComponent['DISA'].arrRank[iDISA++] = new RankClass(575, 'Amb' );
+	
+		objComponent['DISA'].arrRank[iDISA++] = new RankClass(576, 'Dr' );
+	
+		objComponent['DISA'].arrRank[iDISA++] = new RankClass(577, 'Mr' );
+	
+		objComponent['DISA'].arrRank[iDISA++] = new RankClass(578, 'Mrs' );
+	
+		objComponent['DISA'].arrRank[iDISA++] = new RankClass(579, 'Miss' );
+	
+		objComponent['DISA'].arrRank[iDISA++] = new RankClass(580, 'Ms' );
+	
+		objComponent['DISA'].arrRank[iDISA++] = new RankClass(581, 'Prof' );
+	
+		objComponent['DLA'].arrRank[iDLA++] = new RankClass(582, 'Amb' );
+	
+		objComponent['DLA'].arrRank[iDLA++] = new RankClass(583, 'Dr' );
+	
+		objComponent['DLA'].arrRank[iDLA++] = new RankClass(584, 'Mr' );
+	
+		objComponent['DLA'].arrRank[iDLA++] = new RankClass(585, 'Mrs' );
+	
+		objComponent['DLA'].arrRank[iDLA++] = new RankClass(586, 'Miss' );
+	
+		objComponent['DLA'].arrRank[iDLA++] = new RankClass(587, 'Ms' );
+	
+		objComponent['DLA'].arrRank[iDLA++] = new RankClass(588, 'Prof' );
+	
+		objComponent['DLAMP'].arrRank[iDLAMP++] = new RankClass(589, 'Amb' );
+	
+		objComponent['DLAMP'].arrRank[iDLAMP++] = new RankClass(590, 'Dr' );
+	
+		objComponent['DLAMP'].arrRank[iDLAMP++] = new RankClass(591, 'Mr' );
+	
+		objComponent['DLAMP'].arrRank[iDLAMP++] = new RankClass(592, 'Mrs' );
+	
+		objComponent['DLAMP'].arrRank[iDLAMP++] = new RankClass(593, 'Miss' );
+	
+		objComponent['DLAMP'].arrRank[iDLAMP++] = new RankClass(594, 'Ms' );
+	
+		objComponent['DLAMP'].arrRank[iDLAMP++] = new RankClass(595, 'Prof' );
+	
+		objComponent['DLAMP-DNC'].arrRank[iDLAMP-DNC++] = new RankClass(596, 'Amb' );
+	
+		objComponent['DLAMP-DNC'].arrRank[iDLAMP-DNC++] = new RankClass(597, 'Dr' );
+	
+		objComponent['DLAMP-DNC'].arrRank[iDLAMP-DNC++] = new RankClass(598, 'Mr' );
+	
+		objComponent['DLAMP-DNC'].arrRank[iDLAMP-DNC++] = new RankClass(599, 'Mrs' );
+	
+		objComponent['DLAMP-DNC'].arrRank[iDLAMP-DNC++] = new RankClass(600, 'Miss' );
+	
+		objComponent['DLAMP-DNC'].arrRank[iDLAMP-DNC++] = new RankClass(601, 'Ms' );
+	
+		objComponent['DLAMP-DNC'].arrRank[iDLAMP-DNC++] = new RankClass(602, 'Prof' );
+	
+		objComponent['DLAMP-DOD'].arrRank[iDLAMP-DOD++] = new RankClass(603, 'Amb' );
+	
+		objComponent['DLAMP-DOD'].arrRank[iDLAMP-DOD++] = new RankClass(604, 'Dr' );
+	
+		objComponent['DLAMP-DOD'].arrRank[iDLAMP-DOD++] = new RankClass(605, 'Mr' );
+	
+		objComponent['DLAMP-DOD'].arrRank[iDLAMP-DOD++] = new RankClass(606, 'Mrs' );
+	
+		objComponent['DLAMP-DOD'].arrRank[iDLAMP-DOD++] = new RankClass(607, 'Miss' );
+	
+		objComponent['DLAMP-DOD'].arrRank[iDLAMP-DOD++] = new RankClass(608, 'Ms' );
+	
+		objComponent['DLAMP-DOD'].arrRank[iDLAMP-DOD++] = new RankClass(609, 'Prof' );
+	
+		objComponent['DLAMP-OSD'].arrRank[iDLAMP-OSD++] = new RankClass(610, 'Amb' );
+	
+		objComponent['DLAMP-OSD'].arrRank[iDLAMP-OSD++] = new RankClass(611, 'Dr' );
+	
+		objComponent['DLAMP-OSD'].arrRank[iDLAMP-OSD++] = new RankClass(612, 'Mr' );
+	
+		objComponent['DLAMP-OSD'].arrRank[iDLAMP-OSD++] = new RankClass(613, 'Mrs' );
+	
+		objComponent['DLAMP-OSD'].arrRank[iDLAMP-OSD++] = new RankClass(614, 'Miss' );
+	
+		objComponent['DLAMP-OSD'].arrRank[iDLAMP-OSD++] = new RankClass(615, 'Ms' );
+	
+		objComponent['DLAMP-OSD'].arrRank[iDLAMP-OSD++] = new RankClass(616, 'Prof' );
+	
+		objComponent['DMA'].arrRank[iDMA++] = new RankClass(617, 'Amb' );
+	
+		objComponent['DMA'].arrRank[iDMA++] = new RankClass(618, 'Dr' );
+	
+		objComponent['DMA'].arrRank[iDMA++] = new RankClass(619, 'Mr' );
+	
+		objComponent['DMA'].arrRank[iDMA++] = new RankClass(620, 'Mrs' );
+	
+		objComponent['DMA'].arrRank[iDMA++] = new RankClass(621, 'Miss' );
+	
+		objComponent['DMA'].arrRank[iDMA++] = new RankClass(622, 'Ms' );
+	
+		objComponent['DMA'].arrRank[iDMA++] = new RankClass(623, 'Prof' );
+	
+		objComponent['DNC'].arrRank[iDNC++] = new RankClass(624, 'Amb' );
+	
+		objComponent['DNC'].arrRank[iDNC++] = new RankClass(625, 'Dr' );
+	
+		objComponent['DNC'].arrRank[iDNC++] = new RankClass(626, 'Mr' );
+	
+		objComponent['DNC'].arrRank[iDNC++] = new RankClass(627, 'Mrs' );
+	
+		objComponent['DNC'].arrRank[iDNC++] = new RankClass(628, 'Miss' );
+	
+		objComponent['DNC'].arrRank[iDNC++] = new RankClass(629, 'Ms' );
+	
+		objComponent['DNC'].arrRank[iDNC++] = new RankClass(630, 'Prof' );
+	
+		objComponent['DOD'].arrRank[iDOD++] = new RankClass(631, 'Amb' );
+	
+		objComponent['DOD'].arrRank[iDOD++] = new RankClass(632, 'Dr' );
+	
+		objComponent['DOD'].arrRank[iDOD++] = new RankClass(633, 'Mr' );
+	
+		objComponent['DOD'].arrRank[iDOD++] = new RankClass(634, 'Mrs' );
+	
+		objComponent['DOD'].arrRank[iDOD++] = new RankClass(635, 'Miss' );
+	
+		objComponent['DOD'].arrRank[iDOD++] = new RankClass(636, 'Ms' );
+	
+		objComponent['DOD'].arrRank[iDOD++] = new RankClass(637, 'Prof' );
+	
+		objComponent['DOJ'].arrRank[iDOJ++] = new RankClass(638, 'Amb' );
+	
+		objComponent['DOJ'].arrRank[iDOJ++] = new RankClass(639, 'Dr' );
+	
+		objComponent['DOJ'].arrRank[iDOJ++] = new RankClass(640, 'Mr' );
+	
+		objComponent['DOJ'].arrRank[iDOJ++] = new RankClass(641, 'Mrs' );
+	
+		objComponent['DOJ'].arrRank[iDOJ++] = new RankClass(642, 'Miss' );
+	
+		objComponent['DOJ'].arrRank[iDOJ++] = new RankClass(643, 'Ms' );
+	
+		objComponent['DOJ'].arrRank[iDOJ++] = new RankClass(644, 'Prof' );
+	
+		objComponent['DOS'].arrRank[iDOS++] = new RankClass(645, 'Amb' );
+	
+		objComponent['DOS'].arrRank[iDOS++] = new RankClass(646, 'Dr' );
+	
+		objComponent['DOS'].arrRank[iDOS++] = new RankClass(647, 'Mr' );
+	
+		objComponent['DOS'].arrRank[iDOS++] = new RankClass(648, 'Mrs' );
+	
+		objComponent['DOS'].arrRank[iDOS++] = new RankClass(649, 'Miss' );
+	
+		objComponent['DOS'].arrRank[iDOS++] = new RankClass(650, 'Ms' );
+	
+		objComponent['DOS'].arrRank[iDOS++] = new RankClass(651, 'Prof' );
+	
+		objComponent['DSLDP'].arrRank[iDSLDP++] = new RankClass(652, 'Amb' );
+	
+		objComponent['DSLDP'].arrRank[iDSLDP++] = new RankClass(653, 'Dr' );
+	
+		objComponent['DSLDP'].arrRank[iDSLDP++] = new RankClass(654, 'Mr' );
+	
+		objComponent['DSLDP'].arrRank[iDSLDP++] = new RankClass(655, 'Mrs' );
+	
+		objComponent['DSLDP'].arrRank[iDSLDP++] = new RankClass(656, 'Miss' );
+	
+		objComponent['DSLDP'].arrRank[iDSLDP++] = new RankClass(657, 'Ms' );
+	
+		objComponent['DSLDP'].arrRank[iDSLDP++] = new RankClass(658, 'Prof' );
+	
+		objComponent['DSLDPAF'].arrRank[iDSLDPAF++] = new RankClass(659, 'Amb' );
+	
+		objComponent['DSLDPAF'].arrRank[iDSLDPAF++] = new RankClass(660, 'Dr' );
+	
+		objComponent['DSLDPAF'].arrRank[iDSLDPAF++] = new RankClass(661, 'Mr' );
+	
+		objComponent['DSLDPAF'].arrRank[iDSLDPAF++] = new RankClass(662, 'Mrs' );
+	
+		objComponent['DSLDPAF'].arrRank[iDSLDPAF++] = new RankClass(663, 'Miss' );
+	
+		objComponent['DSLDPAF'].arrRank[iDSLDPAF++] = new RankClass(664, 'Ms' );
+	
+		objComponent['DSLDPAF'].arrRank[iDSLDPAF++] = new RankClass(665, 'Prof' );
+	
+		objComponent['DSLDPOUSD'].arrRank[iDSLDPOUSD++] = new RankClass(666, 'Amb' );
+	
+		objComponent['DSLDPOUSD'].arrRank[iDSLDPOUSD++] = new RankClass(667, 'Dr' );
+	
+		objComponent['DSLDPOUSD'].arrRank[iDSLDPOUSD++] = new RankClass(668, 'Mr' );
+	
+		objComponent['DSLDPOUSD'].arrRank[iDSLDPOUSD++] = new RankClass(669, 'Mrs' );
+	
+		objComponent['DSLDPOUSD'].arrRank[iDSLDPOUSD++] = new RankClass(670, 'Miss' );
+	
+		objComponent['DSLDPOUSD'].arrRank[iDSLDPOUSD++] = new RankClass(671, 'Ms' );
+	
+		objComponent['DSLDPOUSD'].arrRank[iDSLDPOUSD++] = new RankClass(672, 'Prof' );
+	
+		objComponent['FEMA'].arrRank[iFEMA++] = new RankClass(673, 'Amb' );
+	
+		objComponent['FEMA'].arrRank[iFEMA++] = new RankClass(674, 'Dr' );
+	
+		objComponent['FEMA'].arrRank[iFEMA++] = new RankClass(675, 'Mr' );
+	
+		objComponent['FEMA'].arrRank[iFEMA++] = new RankClass(676, 'Mrs' );
+	
+		objComponent['FEMA'].arrRank[iFEMA++] = new RankClass(677, 'Miss' );
+	
+		objComponent['FEMA'].arrRank[iFEMA++] = new RankClass(678, 'Ms' );
+	
+		objComponent['FEMA'].arrRank[iFEMA++] = new RankClass(679, 'Prof' );
+	
+		objComponent['IA'].arrRank[iIA++] = new RankClass(680, 'Amb' );
+	
+		objComponent['IA'].arrRank[iIA++] = new RankClass(681, 'Dr' );
+	
+		objComponent['IA'].arrRank[iIA++] = new RankClass(682, 'Mr' );
+	
+		objComponent['IA'].arrRank[iIA++] = new RankClass(683, 'Mrs' );
+	
+		objComponent['IA'].arrRank[iIA++] = new RankClass(684, 'Miss' );
+	
+		objComponent['IA'].arrRank[iIA++] = new RankClass(685, 'Ms' );
+	
+		objComponent['IA'].arrRank[iIA++] = new RankClass(686, 'Prof' );
+	
+		objComponent['NGA'].arrRank[iNGA++] = new RankClass(687, 'Amb' );
+	
+		objComponent['NGA'].arrRank[iNGA++] = new RankClass(688, 'Dr' );
+	
+		objComponent['NGA'].arrRank[iNGA++] = new RankClass(689, 'Mr' );
+	
+		objComponent['NGA'].arrRank[iNGA++] = new RankClass(690, 'Mrs' );
+	
+		objComponent['NGA'].arrRank[iNGA++] = new RankClass(691, 'Miss' );
+	
+		objComponent['NGA'].arrRank[iNGA++] = new RankClass(692, 'Ms' );
+	
+		objComponent['NGA'].arrRank[iNGA++] = new RankClass(693, 'Prof' );
+	
+		objComponent['NIMA'].arrRank[iNIMA++] = new RankClass(694, 'Amb' );
+	
+		objComponent['NIMA'].arrRank[iNIMA++] = new RankClass(695, 'Dr' );
+	
+		objComponent['NIMA'].arrRank[iNIMA++] = new RankClass(696, 'Mr' );
+	
+		objComponent['NIMA'].arrRank[iNIMA++] = new RankClass(697, 'Mrs' );
+	
+		objComponent['NIMA'].arrRank[iNIMA++] = new RankClass(698, 'Miss' );
+	
+		objComponent['NIMA'].arrRank[iNIMA++] = new RankClass(699, 'Ms' );
+	
+		objComponent['NIMA'].arrRank[iNIMA++] = new RankClass(700, 'Prof' );
+	
+		objComponent['NSA'].arrRank[iNSA++] = new RankClass(701, 'Amb' );
+	
+		objComponent['NSA'].arrRank[iNSA++] = new RankClass(702, 'Dr' );
+	
+		objComponent['NSA'].arrRank[iNSA++] = new RankClass(703, 'Mr' );
+	
+		objComponent['NSA'].arrRank[iNSA++] = new RankClass(704, 'Mrs' );
+	
+		objComponent['NSA'].arrRank[iNSA++] = new RankClass(705, 'Miss' );
+	
+		objComponent['NSA'].arrRank[iNSA++] = new RankClass(706, 'Ms' );
+	
+		objComponent['NSA'].arrRank[iNSA++] = new RankClass(707, 'Prof' );
+	
+		objComponent['OSD'].arrRank[iOSD++] = new RankClass(708, 'Amb' );
+	
+		objComponent['OSD'].arrRank[iOSD++] = new RankClass(709, 'Dr' );
+	
+		objComponent['OSD'].arrRank[iOSD++] = new RankClass(710, 'Mr' );
+	
+		objComponent['OSD'].arrRank[iOSD++] = new RankClass(711, 'Mrs' );
+	
+		objComponent['OSD'].arrRank[iOSD++] = new RankClass(712, 'Miss' );
+	
+		objComponent['OSD'].arrRank[iOSD++] = new RankClass(713, 'Ms' );
+	
+		objComponent['OSD'].arrRank[iOSD++] = new RankClass(714, 'Prof' );
+	
+		objComponent['USAID'].arrRank[iUSAID++] = new RankClass(715, 'Amb' );
+	
+		objComponent['USAID'].arrRank[iUSAID++] = new RankClass(716, 'Dr' );
+	
+		objComponent['USAID'].arrRank[iUSAID++] = new RankClass(717, 'Mr' );
+	
+		objComponent['USAID'].arrRank[iUSAID++] = new RankClass(718, 'Mrs' );
+	
+		objComponent['USAID'].arrRank[iUSAID++] = new RankClass(719, 'Miss' );
+	
+		objComponent['USAID'].arrRank[iUSAID++] = new RankClass(720, 'Ms' );
+	
+		objComponent['USAID'].arrRank[iUSAID++] = new RankClass(721, 'Prof' );
+	
+		objComponent['USFS'].arrRank[iUSFS++] = new RankClass(722, 'Amb' );
+	
+		objComponent['USFS'].arrRank[iUSFS++] = new RankClass(723, 'Dr' );
+	
+		objComponent['USFS'].arrRank[iUSFS++] = new RankClass(724, 'Mr' );
+	
+		objComponent['USFS'].arrRank[iUSFS++] = new RankClass(725, 'Mrs' );
+	
+		objComponent['USFS'].arrRank[iUSFS++] = new RankClass(726, 'Miss' );
+	
+		objComponent['USFS'].arrRank[iUSFS++] = new RankClass(727, 'Ms' );
+	
+		objComponent['USFS'].arrRank[iUSFS++] = new RankClass(728, 'Prof' );
+	
+		objComponent['USPHS'].arrRank[iUSPHS++] = new RankClass(729, 'Amb' );
+	
+		objComponent['USPHS'].arrRank[iUSPHS++] = new RankClass(730, 'Dr' );
+	
+		objComponent['USPHS'].arrRank[iUSPHS++] = new RankClass(731, 'Mr' );
+	
+		objComponent['USPHS'].arrRank[iUSPHS++] = new RankClass(732, 'Mrs' );
+	
+		objComponent['USPHS'].arrRank[iUSPHS++] = new RankClass(733, 'Miss' );
+	
+		objComponent['USPHS'].arrRank[iUSPHS++] = new RankClass(734, 'Ms' );
+	
+		objComponent['USPHS'].arrRank[iUSPHS++] = new RankClass(735, 'Prof' );
+	
+		objComponent['VA'].arrRank[iVA++] = new RankClass(736, 'Amb' );
+	
+		objComponent['VA'].arrRank[iVA++] = new RankClass(737, 'Dr' );
+	
+		objComponent['VA'].arrRank[iVA++] = new RankClass(738, 'Mr' );
+	
+		objComponent['VA'].arrRank[iVA++] = new RankClass(739, 'Mrs' );
+	
+		objComponent['VA'].arrRank[iVA++] = new RankClass(740, 'Miss' );
+	
+		objComponent['VA'].arrRank[iVA++] = new RankClass(741, 'Ms' );
+	
+		objComponent['VA'].arrRank[iVA++] = new RankClass(742, 'Prof' );
+	
+		objComponent['DAF'].arrRank[iDAF++] = new RankClass(770, 'Amb' );
+	
+		objComponent['DAF'].arrRank[iDAF++] = new RankClass(771, 'Dr' );
+	
+		objComponent['DAF'].arrRank[iDAF++] = new RankClass(772, 'Mr' );
+	
+		objComponent['DAF'].arrRank[iDAF++] = new RankClass(773, 'Mrs' );
+	
+		objComponent['DAF'].arrRank[iDAF++] = new RankClass(774, 'Miss' );
+	
+		objComponent['DAF'].arrRank[iDAF++] = new RankClass(775, 'Ms' );
+	
+		objComponent['DAF'].arrRank[iDAF++] = new RankClass(776, 'Prof' );
+	
+	
+	function UpdateRanks()
+	{
+
+		var form = document.forms[0];
+		var ServiceID = form.ServiceID[form.ServiceID.selectedIndex].value;
+		var RanksArray; 
+		var RankID = form.RankID[form.RankID.selectedIndex].value;
+		var Service;
+		
+		switch (ServiceID)
+		{
+			case '1':
+				Service = 'ANG';
+				break;
+			case '2':
+				Service = 'ARNG';
+				break;
+			case '3':
+				Service = 'Contractor';
+				break;
+			case '4':
+				Service = 'DACivilian';
+				break;
+			case '5':
+				Service = 'USA';
+				break;
+			case '6':
+				Service = 'USAF';
+				break;
+			case '7':
+				Service = 'USCG';
+				break;
+			case '8':
+				Service = 'USAR';
+				break;
+			case '9':
+				Service = 'USAFR';
+				break;
+			case '10':
+				Service = 'USMC';
+				break;
+			case '11':
+				Service = 'USMCR';
+				break;
+			case '12':
+				Service = 'USN';
+				break;
+			case '13':
+				Service = 'USNR';
+				break;
+			case '14':
+				Service = 'UK';
+				break;
+			case '15':
+				Service = 'Other';
+				break;
+			case '16':
+				Service = 'IF';
+				break;
+		}
+		if (Service != '')
+		{
+			RankArray = objComponent[Service].arrRank;
+			form.RankID.length = 0;
+			
+			for (var i = 1; i < RankArray.length; i++)
+			{
+				if (RankID == RankArray[i].code)
+				{
+					form.RankID.options[i] = new Option(RankArray[i].description, RankArray[i].code, '', selected);
+				}
+				else
+				{
+					form.RankID.options[i] = new Option(RankArray[i].description, RankArray[i].code);
+				}
+			}
+		}
+		else
+		{
+			form.RankID.length = 0;
+			form.RankID.options[0] = new Option('','');
+		}
+	}
+	</script>
+
+<script language="javascript" type="text/javascript" src="Validations.js" tppabs="http://carlislebarracks.carlisle.army.mil/events/Validations.js"></script>
+<script language="javascript" type="text/javascript">
+
+	function checkForm()
+	{
+		if(!checkRequired(document.frmEventRegister.FirstName))
+		{
+			alert('The first name field is required!');
+			document.frmEventRegister.FirstName.focus()
+			return false;
+		}
+		else if(!checkRequired(document.frmEventRegister.LastName))
+		{
+			alert('The last name field is required!');
+			document.frmEventRegister.LastName.focus()
+			return false;
+		}
+		else if(document.frmEventRegister.ServiceID.value == -1)
+		{
+			alert('The service field is required!');
+			document.frmEventRegister.ServiceID.focus()
+			return false;
+		}
+		else if((document.frmEventRegister.RankID.value == -1) || (document.frmEventRegister.RankID.value == ''))
+		{
+			alert('The rank field is required!');
+			document.frmEventRegister.RankID.focus()
+			return false;
+		}
+		else if(!checkRequired(document.frmEventRegister.Address1))
+		{
+			alert('The address 1 field is required!');
+			document.frmEventRegister.Address1.focus()
+			return false;
+		}
+		else if(!checkRequired(document.frmEventRegister.City))
+		{
+			alert('The city field is required!');
+			document.frmEventRegister.City.focus()
+			return false;
+		}
+		else if(document.frmEventRegister.StateID.value == -1)
+		{
+			alert('The state field is required!');
+			document.frmEventRegister.StateID.focus()
+			return false;
+		}
+		else if(!checkRequired(document.frmEventRegister.Zip))
+		{
+			alert('The zip code field is required!');
+			document.frmEventRegister.Zip.focus()
+			return false;
+		}
+		else if(document.frmEventRegister.EmailAddress.value != document.frmEventRegister.ConfirmEmailAddress.value)
+		{
+			alert('Your email and confirmation email addresses do not match!');
+			document.frmEventRegister.EmailAddress.focus()
+			return false;
+		}
+		else
+		{
+			document.frmEventRegister.submit();
+		}
+	}
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Edit Event</title>
+<link href="Events.css" tppabs="http://carlislebarracks.carlisle.army.mil/events/Events.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form name="frmEventRegister" method="post" action="http://carlislebarracks.carlisle.army.mil/events/EventAction.cfm">
+<input type="hidden" name="formAction" value="EventRegister" />
+<input type="hidden" name="EventID" value="376" />
+<input type="hidden" name="Standby" maxlength="1" value="0" />
+<table width="700" align="center">
+	<caption class="tableCaption" align="center">Register for <br /> Salary Negotiation  </caption>
+	<tr>
+    	<td align="center" colspan="2"><span class="redSplat">*</span>&nbsp;denotes required field</td>
+   	</tr>
+	<tr>
+    	<td align="center" colspan="2">&nbsp;</td>
+   	</tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;First Name:&nbsp;</td>
+		<td align="left" class="formField">
+       		<input name="FirstName" type="text" id="FirstName" maxlength="50" size="70" value="" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;Last Name:&nbsp;</td>
+		<td align="left" class="formField">
+       		<input name="LastName" type="text" id="LastName" size="70" maxlength="50" value="" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;Service:&nbsp;</td>
+		<td align="left" class="formField">
+    		<select name="ServiceID" id="ServiceID" onChange="UpdateRanks();">
+            	<option value="-1">-Select Service-</option>
+                
+            		<option value="1">ANG</option>
+            	
+            		<option value="2">ARNG</option>
+            	
+            		<option value="3">Contractor</option>
+            	
+            		<option value="4">DACivilian</option>
+            	
+            		<option value="5">USA</option>
+            	
+            		<option value="6">USAF</option>
+            	
+            		<option value="7">USCG</option>
+            	
+            		<option value="8">USAR</option>
+            	
+            		<option value="9">USAFR</option>
+            	
+            		<option value="10">USMC</option>
+            	
+            		<option value="11">USMCR</option>
+            	
+            		<option value="12">USN</option>
+            	
+            		<option value="13">USNR</option>
+            	
+            		<option value="14">UK</option>
+            	
+            		<option value="15">Other</option>
+            	
+            		<option value="16">IF</option>
+            	
+            		<option value="18">USCGR</option>
+            	
+            		<option value="19">USARA</option>
+            	
+            		<option value="20">USART</option>
+            	
+            		<option value="21">CIA</option>
+            	
+            		<option value="22">CID</option>
+            	
+            		<option value="23">CIV</option>
+            	
+            		<option value="24">CPMS</option>
+            	
+            		<option value="25">DECA</option>
+            	
+            		<option value="26">DHS</option>
+            	
+            		<option value="27">DIA</option>
+            	
+            		<option value="28">DISA</option>
+            	
+            		<option value="29">DLA</option>
+            	
+            		<option value="30">DLAMP</option>
+            	
+            		<option value="31">DLAMP-DNC</option>
+            	
+            		<option value="32">DLAMP-DOD</option>
+            	
+            		<option value="33">DLAMP-OSD</option>
+            	
+            		<option value="34">DMA</option>
+            	
+            		<option value="35">DNC</option>
+            	
+            		<option value="36">DOD</option>
+            	
+            		<option value="37">DOJ</option>
+            	
+            		<option value="38">DOS</option>
+            	
+            		<option value="39">DSLDP</option>
+            	
+            		<option value="40">DSLDPAF</option>
+            	
+            		<option value="41">DSLDPOUSD</option>
+            	
+            		<option value="42">FEMA</option>
+            	
+            		<option value="43">IA</option>
+            	
+            		<option value="44">NGA</option>
+            	
+            		<option value="45">NIMA</option>
+            	
+            		<option value="46">NSA</option>
+            	
+            		<option value="47">OSD</option>
+            	
+            		<option value="48">USAID</option>
+            	
+            		<option value="49">USFS</option>
+            	
+            		<option value="50">USPHS</option>
+            	
+            		<option value="51">VA</option>
+            	
+            		<option value="52">DAF</option>
+            	
+            </select>
+		</td>
+    </tr>
+    <tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;Rank:&nbsp;</td>
+		<td align="left" class="formField">
+    		<select name="RankID" id="RankID">
+            	<option value="-1">-Select Rank-</option>
+            </select>
+        </td>
+    </tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;Address 1:&nbsp;</td>
+		<td align="left" class="formField">
+           	<input name="Address1" type="text" id="Address1" maxlength="255" value="" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel">Address 2:&nbsp;</td>
+		<td align="left" class="formField">
+           	<input name="Address2" type="text" id="Address2" maxlength="255" value="" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;City:&nbsp;</td>
+		<td align="left" class="formField">
+          	<input name="City" type="text" id="City" maxlength="255" value="" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;State:&nbsp;</td>
+        <td align="left" class="formField">
+    		<select name="StateID" id="StateID">
+            	<option value="-1">-Select State-</option>
+                
+            		<option value="3">AK - Alaska</option>
+            	
+            		<option value="4">AL - Alabama</option>
+            	
+            		<option value="6">AR - Arkansas</option>
+            	
+            		<option value="7">AZ - Arizona</option>
+            	
+            		<option value="8">CA - California</option>
+            	
+            		<option value="9">CO - Colorado</option>
+            	
+            		<option value="10">CT - Connecticut</option>
+            	
+            		<option value="11">DC - District of Columbia</option>
+            	
+            		<option value="12">DE - Delaware</option>
+            	
+            		<option value="13">FL - Florida</option>
+            	
+            		<option value="14">GA - Georgia</option>
+            	
+            		<option value="15">HI - Hawaii</option>
+            	
+            		<option value="16">IA - Iowa</option>
+            	
+            		<option value="17">ID - Idaho</option>
+            	
+            		<option value="18">IL - Illinois</option>
+            	
+            		<option value="19">IN - Indiana</option>
+            	
+            		<option value="20">KS - Kansas</option>
+            	
+            		<option value="21">KY - Kentucky</option>
+            	
+            		<option value="22">LA - Louisiana</option>
+            	
+            		<option value="23">MA - Massachusetts</option>
+            	
+            		<option value="24">MD - Maryland</option>
+            	
+            		<option value="25">ME - Maine</option>
+            	
+            		<option value="26">MI - Michigan</option>
+            	
+            		<option value="27">MN - Minnesota</option>
+            	
+            		<option value="28">MO - Missouri</option>
+            	
+            		<option value="29">MS - Mississippi</option>
+            	
+            		<option value="30">MT - Montana</option>
+            	
+            		<option value="31">NC - North Carolina</option>
+            	
+            		<option value="32">ND - North Dakota</option>
+            	
+            		<option value="33">NE - Nebraska</option>
+            	
+            		<option value="34">NH - New Hampshire</option>
+            	
+            		<option value="35">NJ - New Jersey</option>
+            	
+            		<option value="36">NM - New Mexico</option>
+            	
+            		<option value="37">NV - Nevada</option>
+            	
+            		<option value="38">NY - New York</option>
+            	
+            		<option value="39">OH - Ohio</option>
+            	
+            		<option value="40">OK - Oklahoma</option>
+            	
+            		<option value="41">OR - Oregon</option>
+            	
+            		<option value="42">PA - Pennsylvania</option>
+            	
+            		<option value="43">RI - Rhode Island</option>
+            	
+            		<option value="44">SC - South Carolina</option>
+            	
+            		<option value="45">SD - South Dakota</option>
+            	
+            		<option value="46">TN - Tennessee</option>
+            	
+            		<option value="47">TX - Texas</option>
+            	
+            		<option value="48">UT - Utah</option>
+            	
+            		<option value="49">VA - Virginia</option>
+            	
+            		<option value="50">VT - Vermont</option>
+            	
+            		<option value="51">WA - Washington</option>
+            	
+            		<option value="52">WI - Wisconsin</option>
+            	
+            		<option value="53">WV - West Virginia</option>
+            	
+            		<option value="54">WY - Wyoming</option>
+            	
+            </select>
+		</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;Zip Code:&nbsp;</td>
+		<td align="left" class="formField">
+        	<input name="Zip" type="text" id="Zip" size="10" maxlength="15" value="" />
+		</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;Email Address:&nbsp;</td>
+		<td align="left" class="formField">
+           	<input name="EmailAddress" type="text" id="EmailAddress" maxlength="1024" size="70" value="" />
+       	</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;Confirm Email Address:&nbsp;</td>
+		<td align="left" class="formField">
+           	<input name="ConfirmEmailAddress" type="text" id="ConfirmEmailAddress" maxlength="1024" size="70" value="" />
+       	</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel"><span class="redSplat">*</span>&nbsp;Telephone:&nbsp;</td>
+		<td align="left" class="formField">
+           	<input name="Telephone" type="text" id="Telephone" maxlength="50" value="" />
+       	</td>
+	</tr>
+	<tr>
+		<td align="right" class="formLabel">Alternate Telephone:&nbsp;</td>
+		<td align="left" class="formField">
+           	<input name="AlternateTelephone" type="text" id="AlternateTelephone" maxlength="50" value="" />
+       	</td>
+	</tr>
+    <tr>
+    	<td align="right" class="formLabel">Retired:&nbsp;</td>
+        <td align="left" class="formField"><input type="checkbox" name="IsRetired" id="IsRetired" value="1" />
+    </tr>
+    <tr>
+    	<td align="right" class="formLabel">Dependent:&nbsp;</td>
+        <td align="left" class="formField"><input type="checkbox" name="IsDependent" id="IsDependent" value="1" />
+    </tr>
+	<tr>
+		<td align="center" colspan="2">&nbsp;</td>
+    </tr>
+	<tr>
+		<td align="center" colspan="2">
+        	<button type="reset" class="button" name="btnReset" value="Reset Form">Reset Form</button>
+        	<input class="button" type="button" name="btnReturn" value="Return to Event List" onClick="location.href='ViewEvents.cfm-EventOwnerID=ACS.htm'/*tpa=http://carlislebarracks.carlisle.army.mil/events/ViewEvents.cfm?EventOwnerID=ACS*/;" />
+        	<input class="button" type="button" name="btnSubmit" value="Submit Registration Info" onClick="checkForm();" />
+		</td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

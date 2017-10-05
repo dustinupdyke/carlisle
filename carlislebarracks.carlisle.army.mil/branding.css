@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/*
+ * Author: Ryan Kipe
+ *
+ * Project Name: USAWC Branding
+ * Version: 2.0
+ * URL: http://www.carlisle.army.mil
+ */
+
+body{
+	background-color: #f9f9f9;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+section{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+	color: rgb(0,128,255);
+	word-wrap: break-word;
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration:underline;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* ========= KMN Menu ============== */
+
+#menuWrapper{
+	background-color:rgb(0,0,0);
+	width:100%;
+	height:50px;
+	}
+
+/* ========= masthead ============== */
+
+#mastheadWrapper{
+	width: 100%;
+	background-attachment: scroll;
+	background-color: #0f0f0f;
+	/*background-image: url(../img/CBKs-bkgrd.png);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+/* ======== menu slider ============== */
+#awcMenuSlider{		
+		position: fixed;
+		top: 0;
+		left:0;
+	  	width:328px;
+	  	height:100%;
+	  	background-color:rgb(50,50,50);
+		z-index:9999;
+}
+
+
+#awcMenuSlider a{
+	color: rgb(211,211,211);
+	line-height: 38px;
+	cursor:pointer;
+}
+#awcMenuSlider a:hover,
+#awcMenuSlider a:focus {
+  	color: #FFF;
+  	text-decoration:none;
+  	background-color:rgb(0,0,0);
+}
+
+#awcMenuSlider .menuNav{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(0,0,0);
+}
+
+#awcMenuSlider .menuItem{
+	display:block;
+	padding-left: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(0,0,0);
+	}
+#awcMenuSlider .topMenuItem{
+	display:block;
+	padding-left: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(0,0,0);
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb(0,0,0);
+	}
+#awcMenuSlider .vdivider{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: rgb(0,0,0);
+}
+#awcMenuSlider .menuIcon{
+	  display:inline-block;
+	  width:32.3%;
+	  font-size:28px;
+	  text-align:center;
+	}
+#awcMenuSlider h3, #awcMenuSlider h4{
+	color:rgb(136,136,136);
+	padding-left: 15px;
+	display:block;
+}
+
+
+/* =============== awcMenu =============== */
+#awcMenuBar{
+	height: 45px;
+	width: 100%;
+	background-color: rgb(50,50,50);
+}
+
+.awcMenuBarList{
+	padding-left: 0px;
+	list-style: none outside none;
+	margin-left: -5px;
+}
+
+.awcMenuBarList > li {
+	line-height:45px;
+	display: inline-block;
+}
+
+.awcMenuBarList a {
+	color: rgb(211,211,211);
+	text-decoration: none;
+	cursor:pointer;
+	
+  	padding-right: 15px;
+  	padding-left: 5px;
+}
+.awcMenuBarList a:hover,
+.awcMenuBarList a:focus {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.moduleWrapper i{
+	font-size:45px;
+}
+.moduleWrapper a{
+	width:200px;
+	margin-left:25px;
+	margin-bottom: 25px;
+	padding-top:18px;
+}
+
+.green{
+	color:rgb(0,170,0);
+}
+.yellow{
+	color:rgb(255,153,102);
+}
+.red{
+	color:rgb(187,0,0);
+}
+
+/* =============== footer =============== */
+
+#f {
+	background-color: #1b1b1b;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top:60px;
+}
+
+#f p {
+	color: white;
+}
+
+#f a {
+	color: #888;
+}
+
+
+#f h4 {
+	color: white;
+}

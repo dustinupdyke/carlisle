@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: url(Raleway-Light.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Raleway-Light.eot*/;
+  src: local('Raleway Light'), local('Raleway-Light'), url(Raleway-Light.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Raleway-Light.eot*/ format('embedded-opentype'), url(Raleway-Light.woff)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Raleway-Light.woff*/ format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url(Raleway.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Raleway.eot*/;
+  src: local('Raleway'), url(Raleway.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Raleway.eot*/ format('embedded-opentype'), url(Raleway.woff)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Raleway.woff*/ format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Raleway-Bold.eot)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Raleway-Bold.eot*/;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(Raleway-Bold.woff)/*tpa=http://carlislebarracks.carlisle.army.mil/assets/font/Raleway-Bold.woff*/ format('woff');
+}

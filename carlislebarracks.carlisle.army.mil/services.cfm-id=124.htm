@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/garrison2.dwt" codeOutsideHTMLIsLocked="false" -->
+  <head><script type="text/javascript">/* <![CDATA[ */_cf_loadingtexthtml="<img alt=' ' src='loading.gif'/*tpa=http://carlislebarracks.carlisle.army.mil/cf_scripts/scripts/ajax/resources/cf/images/loading.gif*//>";
+_cf_contextpath="";
+_cf_ajaxscriptsrc="index-2.htm"/*tpa=http://carlislebarracks.carlisle.army.mil/cf_scripts/scripts/ajax*/;
+_cf_jsonprefix='//';
+_cf_websocket_port=8579;
+_cf_flash_policy_port=1243;
+_cf_clientid='F6F505456ABE4E270DEF21D33AF05B2D';/* ]]> */</script><script type="text/javascript" src="cfmessage.js" tppabs="http://carlislebarracks.carlisle.army.mil/cf_scripts/scripts/ajax/messages/cfmessage.js"></script>
+<script type="text/javascript" src="cfajax.js" tppabs="http://carlislebarracks.carlisle.army.mil/cf_scripts/scripts/ajax/package/cfajax.js"></script>
+<script type="text/javascript" src="cfform.js" tppabs="http://carlislebarracks.carlisle.army.mil/cf_scripts/scripts/cfform.js"></script>
+<script type="text/javascript" src="masks.js" tppabs="http://carlislebarracks.carlisle.army.mil/cf_scripts/scripts/masks.js"></script>
+<script type="text/javascript" src="cfformhistory.js" tppabs="http://carlislebarracks.carlisle.army.mil/cf_scripts/scripts/cfformhistory.js"></script>
+
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <!-- set compatiblie mode to IE9 or greater-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport for iOS display -->
+  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+  
+ <!-- InstanceBeginEditable name="doctitle" -->
+	
+	<title>US Army Garrison, Carlisle Barracks</title>
+<!-- InstanceEndEditable -->
+  <!-- ============================ IE hacks ================================= -->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	
+		
+	<!-- IE10 & Moblie Fix -->
+	<link rel="stylesheet" type="text/css" href="IEfix.css" tppabs="http://carlislebarracks.carlisle.army.mil/assets/IEhacks/css/IEfix.css">
+	<script src="IEfix.js" tppabs="http://carlislebarracks.carlisle.army.mil/assets/IEhacks/js/IEfix.js"></script>
+		
+   <!-- ============================ base styles ================================= -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" tppabs="http://carlislebarracks.carlisle.army.mil/assets/bootstrap-3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome.min.css" tppabs="http://carlislebarracks.carlisle.army.mil/assets/font-awesome-4.0.3/css/font-awesome.min.css">
+   	<link rel="stylesheet" type="text/css" href="Lato.css" tppabs="http://carlislebarracks.carlisle.army.mil/assets/css/Lato.css">
+	<link rel="stylesheet" type="text/css" href="Raleway.css" tppabs="http://carlislebarracks.carlisle.army.mil/assets/css/Raleway.css">
+	<link rel="stylesheet" type="text/css" href="branding.css" tppabs="http://carlislebarracks.carlisle.army.mil/assets/css/branding.css">
+	
+   <!-- InstanceBeginEditable name="head" -->
+   <!-- ============================ custom styles ================================= -->
+ 	<meta name="pragma" content="no-cache">
+ 	
+ <style>
+		table {
+			width:100%;	
+		}
+		tr {
+			vertical-align:bottom;
+		}
+		td.rightJustify {
+			vertical-align:top;
+			text-align:right;
+			padding-right:5px;
+			border-bottom: 1.5px solid #CCC;
+		}
+		td.lastRowRightJustify {
+			vertical-align:top;
+			text-align:right;
+			padding-right:5px;
+			border-bottom: 1.5px solid black;
+		}
+		td.padded {
+			vertical-align:top;
+			padding-right:15px;
+			border-bottom: 1.5px solid #CCC;
+		}
+		td.paddedLeft {
+			vertical-align:top;
+			text-align:left;
+			padding-right:15px;
+			border-top: 1.5px solid #CCC;
+			border-bottom: 1.5px solid #CCC;
+		}
+		td.paddedLeftSmall {
+			vertical-align:top;
+			text-align:left;
+			padding-right:15px;
+			border-top: 1.5px solid #CCC;
+			border-bottom: 1.5px solid #CCC;
+			width:300px;
+		}
+		td.lastRow {
+			vertical-align:top;
+			padding-right:15px;
+			border-bottom:1.5px solid black;
+		}
+		td.paddedDate {
+			vertical-align:top;
+			padding-right:30px;
+			width:230px;
+			border-bottom: 1.5px solid #CCC;
+		}
+		td.lastRowDate {
+			vertical-align:top;
+			padding-right:30px;
+			border-bottom:1.5px solid black;
+			width:230px;
+		}
+		th {
+			border-bottom:1.5px solid black;
+			text-align:left;			
+		}
+		span.pointed{
+			cursor: pointer;
+			cursor: hand;
+			font-size:12pt;	
+			
+		}
+		pre {
+			/*overflow: auto;
+			width: 90%;
+			font-size:11pt;
+			font-family:Arial, Helvetica, sans-serif;
+			background-color: #f9f9f9;
+			color:#000;
+			border-right:none;
+			border-left:none;
+			border-top:none;
+			border-bottom:none;
+			white-space: pre-wrap !important;
+			word-wrap: keep-all !important;
+			word-break:keep-all !important;
+			ms-word-break:keep-all !important;
+			REPLACED THE CODE ABOVE WITH THE 'PRE' CODE FROM RYAN'S PAGE SectionDisplay.cfm on 1/15/15*/
+animation : none;
+    animation-delay : 0;
+    animation-direction : normal;
+    animation-duration : 0;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+    animation-timing-function : ease;
+    backface-visibility : visible;
+    background : 0;
+    background-attachment : scroll;
+    background-clip : border-box;
+    background-color : transparent;
+    background-image : none;
+    background-origin : padding-box;
+    background-position : 0 0;
+    background-position-x : 0;
+    background-position-y : 0;
+    background-repeat : repeat;
+    background-size : auto auto;
+    border : 0;
+    border-style : none;
+    border-width : medium;
+    border-color : inherit;
+    border-bottom : 0;
+    border-bottom-color : inherit;
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius : 0;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-image : none;
+    border-left : 0;
+    border-left-color : inherit;
+    border-left-style : none;
+    border-left-width : medium;
+    border-radius : 0;
+    border-right : 0;
+    border-right-color : inherit;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 0;
+    border-top : 0;
+    border-top-color : inherit;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    border-top-style : none;
+    border-top-width : medium;
+    bottom : auto;
+    box-shadow : none;
+    box-sizing : content-box;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : inherit;
+    columns : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none currentColor;
+    column-rule-color : currentColor;
+    column-rule-style : none;
+    column-rule-width : none;
+    column-span : 1;
+    column-width : auto;
+    content : normal;
+    counter-increment : none;
+    counter-reset : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline;
+    empty-cells : show;
+    float : none;
+    font : normal;
+    font-family : inherit;
+    font-size : medium;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : normal;
+    height : auto;
+    hyphens : none;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style : none;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : 0;
+    margin-bottom : 0;
+    margin-left : 0;
+    margin-right : 0;
+    margin-top : 0;
+    max-height : none;
+    max-width : none;
+    min-height : 0;
+    min-width : 0;
+    opacity : 1;
+    orphans : 0;
+    outline : 0;
+    outline-color : invert;
+    outline-style : none;
+    outline-width : medium;
+    overflow : visible;
+    overflow-x : visible;
+    overflow-y : visible;
+    padding : 0;
+    padding-bottom : 0;
+    padding-left : 0;
+    padding-right : 0;
+    padding-top : 0;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    perspective : none;
+    perspective-origin : 50% 50%;
+    position : static;
+    /* May need to alter quotes for different locales (e.g fr) */
+    quotes : '\201C' '\201D' '\2018' '\2019';
+    right : auto;
+    tab-size : 8;
+    table-layout : auto;
+    text-align : inherit;
+    text-align-last : auto;
+    text-decoration : none;
+    text-decoration-color : inherit;
+    text-decoration-line : none;
+    text-decoration-style : solid;
+    text-indent : 0;
+    text-shadow : none;
+    text-transform : none;
+    top : auto;
+    transform : none;
+    transform-style : flat;
+    transition : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : none;
+    transition-timing-function : ease;
+    unicode-bidi : normal;
+    vertical-align : baseline;
+    visibility : visible;
+	white-space: pre-wrap;       /* css-3 */
+	 white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	 white-space: -pre-wrap;      /* Opera 4-6 */
+	 white-space: -o-pre-wrap;    /* Opera 7 */
+	 word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    widows : 0;
+    width : auto;
+    word-spacing : break-word;
+	
+    z-index : auto;
+	}			
+			
+			/*white-space: pre-wrap !important;;*/
+			/*line-break:strict !important;*/
+
+	/*white-space: pre-wrap;  */               /* CSS3 browsers  */
+	/*white-space: -moz-pre-wrap !important;*/ /* 1999+ Mozilla  */
+	/*white-space: -pre-wrap;*/                /* Opera 4 thru 6 */
+	/*white-space: -o-pre-wrap; */             /* Opera 7 and up */
+	/*word-wrap:normal;*/
+	/* overflow-x: auto; */                /* Firefox 2 only */
+	/* width: 99%; */		       /* only if needed */
+
+		}
+    </style>
+   <!-- InstanceEndEditable -->
+   
+
+<script type="text/javascript">/* <![CDATA[ */
+	ColdFusion.Ajax.importTag('CFAJAXPROXY');
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	ColdFusion.Ajax.importTag('CFFORM');
+/* ]]> */</script>
+<script type="text/javascript">
+<!--
+    _CF_checkCFForm_1 = function(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            // run userdefined onSubmit javascript. 
+            return false;
+            return true;
+        }
+    }
+//-->
+</script>
+</head>
+
+<body>
+		<!-- ================ Menu Slider ================ -->
+		<!-- InstanceBeginEditable name="MenuSlider" -->
+	
+    <div id="awcMenuSlider" menuDefault="baseMenu">
+	  <div id="awcMenuContent"></div>
+	</div>
+	<!-- InstanceEndEditable -->
+	<!-- ============ Masthead ============ -->
+	<div id="mastheadWrapper">
+		<div class="container"> <a href="index.htm" tppabs="http://carlislebarracks.carlisle.army.mil/"><img src="USAG-Header.png" tppabs="http://carlislebarracks.carlisle.army.mil/assets/img/USAG-Header.png" class="img-responsive"></a>
+		</div><!-- /container -->
+	</div><!-- /mastheadWrapper -->
+	
+	
+	<!-- ================ MenuBar ================ -->
+	<!-- InstanceBeginEditable name="MenuBar" -->
+    <div id="awcMenuBar">
+	<div class="container">
+			<ul class="awcMenuBarList">
+				<li><a onClick="LoadAwcMenu('baseMenu')"><i class="fa fa-bars"></i>&nbsp;Menu</a></li>
+				<li class="hidden-xs"><a onClick="LoadAwcMenu('garrison')">Missions, Organizations</a></li>
+<li class="hidden-xs"><a href="javascript:if(confirm(%27http://www.armywarcollege.edu/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://www.armywarcollege.edu/%27" tppabs="http://www.armywarcollege.edu/">USAWC Homepage</a></li>
+				<li class="hidden-xs"><a href="SectionDisplay.cfm-cat=34.htm" tppabs="http://carlislebarracks.carlisle.army.mil/Services/SectionDisplay.cfm?cat=34">Military</a></li>
+                		<li class="hidden-xs"><a href="directions.htm" tppabs="http://carlislebarracks.carlisle.army.mil/directions.htm">Visitors</a></li>
+				<li class="hidden-xs"><a href="SectionDisplay.cfm-cat=31.htm" tppabs="http://carlislebarracks.carlisle.army.mil/Services/SectionDisplay.cfm?cat=31">Family</a></li>
+				<li class="hidden-xs"><a href="history.htm" tppabs="http://carlislebarracks.carlisle.army.mil/history.htm">History</a></li>
+				<li class="hidden-xs"><a href="Community FAQ.pdf" tppabs="http://carlislebarracks.carlisle.army.mil/docs/Community FAQ.pdf" target="_blank">FAQ's</a></li>
+                <!--<li class="hidden-xs"><a href="http://public.carlisle.army.mil/sites/communitycalendar/default.aspx" target="_blank">Calendar</a></li>-->
+				<li class="pull-right hidden-xs"><a href="search.htm" tppabs="http://carlislebarracks.carlisle.army.mil/search.htm"><i class="fa fa-search"></i>&nbsp;Search</a></li>
+			</ul>
+		</div><!--container-->
+	</div><!--awcMenuBar-->
+    <!-- InstanceEndEditable -->
+    
+	<!-- InstanceBeginEditable name="pageContent" -->
+    
+
+    <div class="container">
+        <div id="displayRecords">
+        <form id="searchServicesForm" action="http://carlislebarracks.carlisle.army.mil/Services/Services.cfm" method="post" class="form" onsubmit="return _CF_checkCFForm_1(this)">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>Garrison Services Catalog - </h3>
+					</div><!-- /.col-sm-12 -->
+				</div><!-- /.row -->
+                    
+                <div class="row">
+					<div class="col-sm-12">
+						<p>Search for a service by name&nbsp;(full or partial)<strong><i>&nbsp;-OR-&nbsp;</i></strong> by selecting from the dropdown menu. Once you have entered your search criteria, click the <strong>Search Services</strong> button.</p>
+					</div><!-- /.col-sm-12 -->
+				</div><!-- /.row -->
+                
+                <div class="row">
+                
+					
+                        <div class="col-sm-4">
+                            <input name="SearchServices" type="text" id="SearchServices"  class="form-control"  onfocus="clearMenu();"  />
+                        </div><!-- /.col-sm-4 -->
+                        <div class="col-sm-4">
+                            <select name="ServicesMenu" id="ServicesMenu"  onchange="clearTextSearch();"  class="form-control" >
+    <option value="Select...">Select...</option>
+    <option value="Acquisition & Supply">Acquisition & Supply</option>
+    <option value="Administration">Administration</option>
+    <option value="Civilian Personnel Services">Civilian Personnel Services</option>
+    <option value="Communications">Communications</option>
+    <option value="Dining">Dining</option>
+    <option value="Education & Training">Education & Training</option>
+    <option value="Emergency Services">Emergency Services</option>
+    <option value="Facility Management">Facility Management</option>
+    <option value="Family">Family</option>
+    <option value="Fitness">Fitness</option>
+    <option value="Health">Health</option>
+    <option value="Housing">Housing</option>
+    <option value="Lodging & Travel">Lodging & Travel</option>
+    <option value="Medical Services">Medical Services</option>
+    <option value="Military Services">Military Services</option>
+    <option value="Money & Finance">Money & Finance</option>
+    <option value="Newcomers">Newcomers</option>
+    <option value="Recreation">Recreation</option>
+    <option value="Religious Services">Religious Services</option>
+    <option value="Retail Services">Retail Services</option>
+    <option value="Retiree Services">Retiree Services</option>
+    <option value="Safety & Security">Safety & Security</option>
+    <option value="Select...">Select...</option>
+    <option value="Visitors">Visitors</option>
+</select>
+                        </div><!-- /.col-sm-4 -->
+                     
+                   <div class="col-sm-2">
+                    	<input type="button" name="SearchButton" id="SearchButton" value="Search Services" class="btn btn-default" onClick="validCharacters()" />
+                    	
+                    </div><!-- /.col-sm-2 -->
+                    <div class="col-sm-1">
+                    	<input name="Clear" type="button" class="btn btn-primary" onClick="clearMenu();ColdFusion.navigate('Services.cfm.htm'/*tpa=http://carlislebarracks.carlisle.army.mil/Services/Services.cfm*/);" value="Clear Search"/>
+                    </div><!-- /.col-sm-1 -->
+				</div><!-- /.row -->
+               </form>
+
+                    
+                <div class="row">
+					<div class="col-sm-12">
+						
+                        	<p>&nbsp;</p>
+                         
+					</div><!-- /.col-sm-12 -->
+				</div><!-- /.row -->
+                
+               
+         
+         	<div class="row">
+            	<div class="col-sm-12">
+					<h4><strong>Casualty Affairs</strong></h4>
+            	<!-- phone -->
+                    
+						<strong>Phone:&nbsp;</strong>
+						<a href="tel:(717)245-4501">(717)245-4501</a>
+                    
+						<br /><strong>Alternate Phone:&nbsp;</strong>
+						<a href="tel:(717) 245-3869">(717) 245-3869</a>
+                    
+
+				</div><!-- /.col-sm-12 -->
+            </div><!-- /.row  -->
+            
+             <div class="row" style="margin-bottom:14px;">
+				
+                	 <div class="col-sm-12">
+                        <br /><pre>Casualty Affairs reports active duty casualties, trains and counsels Notification Officers and Casualty Assistance officers. Casualty Affairs are administered by the Retirement Services Office, Military Personnel Services.</pre>	
+                    </div><!-- /.col-sm-12 -->
+                
+            </div>
+            
+            <div class="row" style="margin-bottom:18px;">
+				<div class="col-sm-12">
+                	<strong>Hours of Operation:</strong>
+                </div><!-- /.col-sm-12 -->
+                
+                 
+                    <div class="col-sm-12">
+						<pre>Monday – Friday, 8:00 a.m. – 4:00p.m.</pre>
+                    </div><!-- /.col-sm-12 -->
+                  
+			</div><!-- /.row -->
+            
+            <div class="row" style="margin-bottom:9px;">
+                <!-- adddress -->
+                <div class="col-sm-4">
+                    
+                    <div class="col-sm-12">
+						<strong>Address</strong>
+					</div><!-- /.col-sm-12 -->
+                    <div class="col-sm-12">
+						46 Ashburn Drive
+					</div><!-- /.col-sm-12 -->
+                    
+                </div><!-- /.col-sm-4 -->
+                
+                <!-- Web -->
+                <div class="col-sm-4">
+                    
+                </div><!-- /.col-sm-4 -->
+                
+			</div><!-- /.row -->
+            
+            
+           
+            
+            
+                
+				
+         	<hr>
+         
+
+
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                
+        </div> 
+    </div>	
+	
+	<!-- InstanceEndEditable -->
+
+	<div id="footerWrapper"></div>
+	
+  	<!-- Placed at the end of the document so the pages load faster -->
+  
+	<!-- ============== Required JavaScript =================== -->
+<script src="jquery-2.1.0.min.js" tppabs="http://carlislebarracks.carlisle.army.mil/assets/js/jquery-2.1.0.min.js"></script>
+<script src="bootstrap.min.js" tppabs="http://carlislebarracks.carlisle.army.mil/assets/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+<script src="awcMenu.js" tppabs="http://carlislebarracks.carlisle.army.mil/assets/awcMenu/awcMenu.js"></script>
+<script src="googleAnalytics.js" tppabs="http://carlislebarracks.carlisle.army.mil/assets/js/googleAnalytics.js"></script>
+	<!-- ============== Custom JavaScript ===================== -->
+<!-- InstanceBeginEditable name="CustomJavaScript" -->
+
+
+	
+	
+    
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			
+		});
+		
+		function clearMenu(){
+			//alert("This is a test");			
+			$("#ServicesMenu option:selected").text("Select...")
+			$("#ServicesMenu option:selected").val("")
+		}
+		
+//		function bonsai(){
+//			//alert("We are here!");
+//			clearMenu();ColdFusion.navigate('../cfcs/Services/displayUSAWCServices.cfc?method=ListServicesDetails&SearchFor=&USAWCServiceCatalogTypeID=1&SearchType=0','displayRecords');
+//			//ColdFusion.navigate('http://www.google.com/');
+//			//alert("Not here!");
+//			//window.location.assign("Services.cfm.htm"/*tpa=http://carlislebarracks.carlisle.army.mil/Services/Services.cfm*/)
+//		}
+
+		function clearTextSearch(){
+			//alert("This is also a test");
+			$('#SearchServices').val("");
+		}
+		
+		function expandDetailDiv(rowID){
+			var myStatus=$('#Status_' + rowID).val();
+			//alert("rowID: " + rowID );	
+			//alert("1. rowID: " + rowID + ".\nStatus: " + $('#Status_' + rowID).val());
+
+			if (myStatus == "shut"){ //it's shut - open it!
+				$('#Status_' + rowID).val("open")
+				$('#DetailDiv_' + rowID).show();
+				$('#DetailDiv_' + rowID).css("visibility","visible")
+				//$('#serviceicon_' + rowID + '.fa fa-plus-square').removeClass('fa fa-plus-square').addClass('fa fa-minus-square');
+				$('#serviceicon_' + rowID).removeClass('fa fa-plus-square').addClass('fa fa-minus-square');
+			}
+			else { //it's open - shut it!
+				$('#Status_' + rowID).val("shut")	
+				$('#DetailDiv_' + rowID).hide();
+				$('#DetailDiv_' + rowID).css("visibility","hidden")			
+				//$('#serviceicon_' + rowID + '.fa fa-minus-square').removeClass('fa fa-minus-square').addClass('fa fa-plus-square');
+				$('#serviceicon_' + rowID).removeClass('fa fa-minus-square').addClass('fa fa-plus-square');
+			}			
+			//alert("2. rowID: " + rowID + ".\nStatus: " + $('#Status_' + rowID).val());
+		}
+
+		$("#SearchServices").keyup(function(event){
+			//alert("I got fired up!");
+			if(event.keyCode == 13){
+				$("#SearchButton").click();
+			}
+		});
+		
+		function validCharacters(){
+			var strCharacters = $.trim($("#SearchServices").val());
+			//var strCharacters = $.trim($("#ServicesMenu option:selected").val());
+			//alert("You submitted ***" + strCharacters + "***");
+			var validCharacterString = (/^[a-zA-Z0-9 \.\-,'\&]+$/);
+			var matchArray1 = strCharacters.match(validCharacterString); 
+			
+			if (strCharacters != ""){
+				if (matchArray1 == null) {
+					alert("Search String contains invalid characters!")
+					return false;
+				}
+				else {
+					document.forms["searchServicesForm"].submit();		
+				}								
+			}
+			else {
+				document.forms["searchServicesForm"].submit();		
+			}
+		}
+		
+	</script>	
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
